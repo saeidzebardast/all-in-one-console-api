@@ -1,5 +1,5 @@
 # All in one Console API
-This repository contains some samples of using the Console API. All the essential methods of Console API are included with a sample in [README.md](README.md) and [index.html](index.html).
+This repository contains some samples of using the Console API. All the essential methods of Console API are included with a sample in [README.md](README.md).
 
 ----
 
