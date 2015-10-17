@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>All in one Console API by saeidzebardast</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">All in one Console API</h1>
+        <p class="header"></p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/saeidzebardast/all-in-one-console-api/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/saeidzebardast/all-in-one-console-api/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/saeidzebardast/all-in-one-console-api">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/saeidzebardast">saeidzebardast</a></p>
+
+
+      </header>
+      <section>
+        <h1>
+<a id="all-in-one-console-api" class="anchor" href="#all-in-one-console-api" aria-hidden="true"><span class="octicon octicon-link"></span></a>All in one Console API</h1>
+
+<hr>
+
+<h2>
+<a id="whats-console-api" class="anchor" href="#whats-console-api" aria-hidden="true"><span class="octicon octicon-link"></span></a>What's Console API?</h2>
+
+<p>The Console API provides web applications with methods for writing information to the console, creating JavaScript profiles, and initiating a debugging session.</p>
+
+<hr>
+
+<h2>
+<a id="non-standard" class="anchor" href="#non-standard" aria-hidden="true"><span class="octicon octicon-link"></span></a>Non-standard</h2>
+
+<p>see <a href="https://developer.mozilla.org/en-US/docs/Web/API/Console">developer.mozilla.org</a></p>
+
+<blockquote>
+<p>This feature is non-standard and is not on a standards track. Do not use it on production sites facing the Web: it will not work for every user. There may also be large incompatibilities between implementations and the behavior may change in the future.".</p>
+</blockquote>
+
+<hr>
+
+<h2>
+<a id="methods" class="anchor" href="#methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>Methods</h2>
+
+<h3>
+<a id="consolelogobject-object-" class="anchor" href="#consolelogobject-object-" aria-hidden="true"><span class="octicon octicon-link"></span></a>console.log(object[, object, ...])</h3>
+
+<p>Writes a message to the console. You may pass as many arguments as you'd like, and they will be joined together in a space-delimited line.</p>
+
+<h3>
+<a id="consoledebugobject-object-" class="anchor" href="#consoledebugobject-object-" aria-hidden="true"><span class="octicon octicon-link"></span></a>console.debug(object[, object, ...])</h3>
+
+<p>Writes a message to the console, including a hyperlink to the line where it was called.</p>
+
+<h3>
+<a id="consoleinfoobject-object-" class="anchor" href="#consoleinfoobject-object-" aria-hidden="true"><span class="octicon octicon-link"></span></a>console.info(object[, object, ...])</h3>
+
+<p>Writes a message to the console with the visual "info" icon and color coding and a hyperlink to the line where it was called.</p>
+
+<h3>
+<a id="consolewarnobject-object-" class="anchor" href="#consolewarnobject-object-" aria-hidden="true"><span class="octicon octicon-link"></span></a>console.warn(object[, object, ...])</h3>
+
+<p>Writes a message to the console with the visual "warning" icon and color coding and a hyperlink to the line where it was called.</p>
+
+<h3>
+<a id="consoleerrorobject-object-" class="anchor" href="#consoleerrorobject-object-" aria-hidden="true"><span class="octicon octicon-link"></span></a>console.error(object[, object, ...])</h3>
+
+<p>Writes a message to the console with the visual "error" icon and color coding and a hyperlink to the line where it was called.</p>
+
+<h3>
+<a id="consoleassertexpression-object-" class="anchor" href="#consoleassertexpression-object-" aria-hidden="true"><span class="octicon octicon-link"></span></a>console.assert(expression[, object, ...])</h3>
+
+<p>Tests that an expression is true.  If not, it will write a message to the console and throw an exception.</p>
+
+<h3>
+<a id="consoleclear" class="anchor" href="#consoleclear" aria-hidden="true"><span class="octicon octicon-link"></span></a>console.clear()</h3>
+
+<p>Clears the console.</p>
+
+<h3>
+<a id="consoledirobject" class="anchor" href="#consoledirobject" aria-hidden="true"><span class="octicon octicon-link"></span></a>console.dir(object)</h3>
+
+<p>Prints an interactive listing of all properties of the object.</p>
+
+<h3>
+<a id="consoledirxmlnode" class="anchor" href="#consoledirxmlnode" aria-hidden="true"><span class="octicon octicon-link"></span></a>console.dirxml(node)</h3>
+
+<p>Prints the XML source tree of an HTML or XML element.</p>
+
+<h3>
+<a id="consoletrace" class="anchor" href="#consoletrace" aria-hidden="true"><span class="octicon octicon-link"></span></a>console.trace()</h3>
+
+<p>Prints an interactive stack trace of JavaScript execution at the point where it is called.</p>
+
+<p>The stack trace details the functions on the stack, as well as the values that were passed as arguments to each function.</p>
+
+<h3>
+<a id="consolegroupobject-object-" class="anchor" href="#consolegroupobject-object-" aria-hidden="true"><span class="octicon octicon-link"></span></a>console.group(object[, object, ...])</h3>
+
+<p>Writes a message to the console and opens a nested block to indent all future messages sent to the console. Call <code>console.groupEnd()</code> to close the block.</p>
+
+<h3>
+<a id="consolegroupcollapsedobject-object-" class="anchor" href="#consolegroupcollapsedobject-object-" aria-hidden="true"><span class="octicon octicon-link"></span></a>console.groupCollapsed(object[, object, ...])</h3>
+
+<p>Like <code>console.group()</code>, but the block is initially collapsed.</p>
+
+<h3>
+<a id="consolegroupend" class="anchor" href="#consolegroupend" aria-hidden="true"><span class="octicon octicon-link"></span></a>console.groupEnd()</h3>
+
+<p>Closes the most recently opened block created by a call to <code>console.group()</code> or <code>console.groupCollapsed()</code></p>
+
+<h3>
+<a id="consoletimename" class="anchor" href="#consoletimename" aria-hidden="true"><span class="octicon octicon-link"></span></a>console.time(name)</h3>
+
+<p>Creates a new timer under the given name. Call <code>console.timeEnd()</code> with the same name to stop the timer and print the time elapsed.</p>
+
+<h3>
+<a id="consoletimeendname" class="anchor" href="#consoletimeendname" aria-hidden="true"><span class="octicon octicon-link"></span></a>console.timeEnd(name)</h3>
+
+<p>Stops a timer created by a call to <code>console.time(name)</code> and writes the time elapsed.</p>
+
+<h3>
+<a id="consoletimestampname" class="anchor" href="#consoletimestampname" aria-hidden="true"><span class="octicon octicon-link"></span></a>console.timeStamp(name)</h3>
+
+<p>Creates a time stamp.</p>
+
+<h3>
+<a id="consoleprofiletitle" class="anchor" href="#consoleprofiletitle" aria-hidden="true"><span class="octicon octicon-link"></span></a>console.profile([title])</h3>
+
+<p>Turns on the JavaScript profiler.</p>
+
+<h3>
+<a id="consoleprofileend" class="anchor" href="#consoleprofileend" aria-hidden="true"><span class="octicon octicon-link"></span></a>console.profileEnd()</h3>
+
+<p>Turns off the JavaScript profiler and prints its report.</p>
+
+<h3>
+<a id="consolecounttitle" class="anchor" href="#consolecounttitle" aria-hidden="true"><span class="octicon octicon-link"></span></a>console.count([title])</h3>
+
+<p>Writes the number of times that the line of code where <code>count</code> was called was executed.</p>
+
+<h3>
+<a id="consoleexceptionerror-object-object-" class="anchor" href="#consoleexceptionerror-object-object-" aria-hidden="true"><span class="octicon octicon-link"></span></a>console.exception(error-object[, object, ...])</h3>
+
+<p>Prints an error message together with an interactive stack trace of JavaScript execution at the point where the exception occurred.</p>
+
+<h3>
+<a id="consoletabledata-columns" class="anchor" href="#consoletabledata-columns" aria-hidden="true"><span class="octicon octicon-link"></span></a>console.table(data[, columns])</h3>
+
+<p>Allows to log provided data using tabular layout.</p>
+
+<hr>
+
+<h2>
+<a id="more-info" class="anchor" href="#more-info" aria-hidden="true"><span class="octicon octicon-link"></span></a>More info</h2>
+
+<ul>
+<li><a href="https://developer.chrome.com/devtools/docs/console-api">developer.chrome.com</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Console">developer.mozilla.org</a></li>
+<li><a href="https://getfirebug.com/wiki/index.php/Console_API">getfirebug.com</a></li>
+</ul>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
